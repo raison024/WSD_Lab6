@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab6-Cookies</title>
 </head>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
     .box {
         font-family: 'Poppins', sans-serif;
         height: 100vh;
@@ -24,7 +29,7 @@
         background-color: rgb(173, 211, 245);
         width: 400px;
         height: 480px;
-        padding: 10px;
+        padding: 20px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -39,24 +44,35 @@
         margin-bottom: 10px;
     }
 
+    input[type=button]{
+        border: 0;
+        padding: 10px;
+        margin: 3px;
+        background-color: beige;
+    }
+    input[type=button]:hover{
+        background-color: #0ca5bc;
+        color: white;
+    }
+
     .RegId {
         margin-bottom: 10px;
         width: 100%;
     }
 
     .button {
-        padding: 5px 5px;
-        font-size: 10px;
+        padding: 10px;
+        font-size: 13px;
         text-align: center;
         cursor: pointer;
         color: #fff;
         background-color: #0ca5bc;
         border-radius: 20px;
-        box-shadow: 0 10px #999;
+        border: 0;
     }
 
     .button:hover {
-        background-color: #007095
+        background-color: #007095;
     }
 
     .button:active {
@@ -126,9 +142,7 @@
 <div class="box">
 
     <div class="innerbox">
-        <p>
-            <center>COOKIES</center>
-        </p>
+        <h3>COOKIES</h3>
 
         <div class="RegId">
             RegId: <input type="text" id="RegId" placeholder="RegId"><br></div>
